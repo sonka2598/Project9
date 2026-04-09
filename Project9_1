@@ -1,0 +1,24 @@
+#include <QCoreApplication>
+#include <iostream>
+#include <Windows.h>
+
+//выполнение задания 1
+
+void print(int *mus, int size)
+{
+   for (int i = 0; i < size; i++)
+   {
+       std::cout << mus[i] << " ";
+   }
+   std::cout << std::endl;
+}
+
+int main()
+{
+   SetConsoleCP(1251);
+   SetConsoleOutputCP(1251);
+   int arr1[] = {5, 3, 4};
+   int arr2[] = {1, 2, 3, 4, 5, 6};
+   print(arr1, 3);
+   print(arr2, 6);
+}
